@@ -20,6 +20,8 @@ Sim, pois não tomar a ação resulta em prejuízos (queimadura). Mas não são 
 
 ### “Certamente animais não podem ser inteligentes – eles podem fazer apenas o que seus genes dizem a eles”. Esta última afirmação é verdadeira? A última afirmação implica na primeira?
 
+--Todo--
+
 ## Agentes
 
 ### Para cada uma das seguintes atividades, forneça a descrição PEAS da tarefa a caracterize-a de acordo com as propriedades [Observável/Não observável; Determinístico/Estocástico; Episódico/Sequencial; Estático/Dinâmico; Discreto/Contínuo; Conhecido/Desconhecido]
@@ -30,11 +32,15 @@ Sim, pois não tomar a ação resulta em prejuízos (queimadura). Mas não são 
 |------|-----------|--------|---------|--------|
 |Jogadores, juíz|Velocidade, habilidade|Campo, bola, adversário|Chutar, passar bola|Visão, tato
 
+Observável, estocástico, sequencial, dinâmico, contínuo, conhecido.
+
 #### Explorando os oceanos subterrâneos de Titan
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
 |Submarino|Seguro, Iluminação|Oceano, vida marinha|Navegar, iluminar|Visão, tato
+
+Não observável, estocástico, sequêncial, dinâmico, contínuo, desconhecido.
 
 #### Comprando livros de IA usados na internet
 
@@ -42,11 +48,15 @@ Sim, pois não tomar a ação resulta em prejuízos (queimadura). Mas não são 
 |------|-----------|--------|---------|--------|
 |Comprador|Seguro, confiável|Sites da internet|Navegar páginas, escolher livro mais barato|Leitor de tela
 
+Observável, determinístico, episódico, estático, discreto, desconhecido.
+
 #### Jogando uma partida de tênis
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
 |Jogadores, Juíz|Velocidade, Habilidade|Quadra, Bola|Acertar bola dentro da quadra, sacar, movimentar|Visão, tato
+
+Observável, estocástico, sequencial, dinâmico, contínuo, conhecido.
 
 #### Praticando tênis na (contra a) parede
 
@@ -54,17 +64,23 @@ Sim, pois não tomar a ação resulta em prejuízos (queimadura). Mas não são 
 |------|-----------|--------|---------|--------|
 |Jogador|Velocidade, Habilidade|Quadra, bola, parede|Acertar bola dentro da quadra, movimentar|Visão, tato
 
+Observável, determinístico, sequencial, dinâmico, contínuo, conhecido.
+
 #### Praticando salto em altura (atletismo)
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
 |Atleta|Velocidade, salto|Pista de salto|Correr, saltar, cair|Visão, tato
 
+Observável, determinístico, sequencial, estático, contínuo, conhecido.
+
 #### Tricotando um suéter
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
-|Atleta|Velocidade, salto|Pista de salto|Correr, saltar, cair|Visão, tato
+|Pessoa tricotando, |Habilidade|Cadeira, agulhas|tricotar|Visão, tato
+
+Observável, determinístico, sequencial, estático, discreto.
 
 #### Fazendo lances em um leilão
 
@@ -72,4 +88,8 @@ Sim, pois não tomar a ação resulta em prejuízos (queimadura). Mas não são 
 |------|-----------|--------|---------|--------|
 |Cliente|Cobrir lançes, saber quando parar|Local do leilão|Efetuar lançe|Visão, preço do lance
 
+Observável, estocástico, episódico, dinâmico, contínuo.
+
 ### Defina os seguintes termos com suas próprias palavras: agente, função de agente, programa de agente, racionalidade, autonomia, agente reativo (reflexivo), agente baseado em modelo, agente baseado em objetivo, agente baseado em utilidade
+
+--Todo--
