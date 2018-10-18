@@ -92,4 +92,21 @@ Observável, estocástico, episódico, dinâmico, contínuo.
 
 ### Defina os seguintes termos com suas próprias palavras: agente, função de agente, programa de agente, racionalidade, autonomia, agente reativo (reflexivo), agente baseado em modelo, agente baseado em objetivo, agente baseado em utilidade
 
---Todo--
+#### Agente
+
+#### Função do agente
+
+#### Programa de agente
+
+#### Racionalidade
+
+#### Autonomia
+
+#### Agente reativo
+
+#### Agente baseado em modelo
+
+#### Agente baseado em objetivo
+
+#### Agente baseado em utilidade
+
