@@ -38,7 +38,7 @@ Observável, estocástico, sequencial, dinâmico, contínuo, conhecido.
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
-|Submarino|Seguro, Iluminação|Oceano, vida marinha|Navegar, iluminar|Visão, tato
+|Submarino|Seguro, Iluminar|Oceano, vida marinha|Navegar, iluminar|Visão, tato
 
 Não observável, estocástico, sequêncial, dinâmico, contínuo, desconhecido.
 
@@ -54,7 +54,7 @@ Observável, determinístico, episódico, estático, discreto, desconhecido.
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
-|Jogadores, Juíz|Velocidade, Habilidade|Quadra, Bola|Acertar bola dentro da quadra, sacar, movimentar|Visão, tato
+|Jogadores, Juíz|Acertar bola dentro da quadra|Quadra, Bola|, sacar, movimentar|Visão, tato
 
 Observável, estocástico, sequencial, dinâmico, contínuo, conhecido.
 
@@ -62,7 +62,7 @@ Observável, estocástico, sequencial, dinâmico, contínuo, conhecido.
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
-|Jogador|Velocidade, Habilidade|Quadra, bola, parede|Acertar bola dentro da quadra, movimentar|Visão, tato
+|Jogador|Acertar bola dentro da quadra|Quadra, bola, parede|movimentar|Visão, tato
 
 Observável, determinístico, sequencial, dinâmico, contínuo, conhecido.
 
@@ -70,7 +70,7 @@ Observável, determinístico, sequencial, dinâmico, contínuo, conhecido.
 
 |Agente|Performance|Ambiente|Atuadores|Sensores|
 |------|-----------|--------|---------|--------|
-|Atleta|Velocidade, salto|Pista de salto|Correr, saltar, cair|Visão, tato
+|Atleta|Saltar o mais longe possível, a partir da marca de salto|Pista de salto|Correr, saltar, cair|Visão, tato
 
 Observável, determinístico, sequencial, estático, contínuo, conhecido.
 
