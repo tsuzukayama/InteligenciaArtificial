@@ -185,7 +185,7 @@ Sim. O agente, dado o histórico de ações tomadas, atualiza o estado atual de 
 
 ## Busca
 
-### Formule o problema (estado inicial, possíveis ações, modelo de transição, função de objetivo, custo de caminho) para os casos a seguir. Escolha o nível de abstração adequado para a implementação
+### **1.** Formule o problema (estado inicial, possíveis ações, modelo de transição, função de objetivo, custo de caminho) para os casos a seguir. Escolha o nível de abstração adequado para a implementação
 
 #### Usando somente 4 cores, você deve colorir um mapa de forma que duas regiões (ou países) adjacentes não tenham a mesma cor
 
