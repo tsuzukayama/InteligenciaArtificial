@@ -1,6 +1,6 @@
-# Inteligência artificial
+# Inteligência Artificial
 
-Repositório com o conteúdo da disciplina de Inteligência Artificial, da UFABC, ministrada pelo professor Denis Gustavo Fantinato.
+Repositório com o conteúdo da disciplina de Inteligência Artificial, da UFABC, ministrada pelo professor Denis Gustavo Fantinato no 3º quadrimestre de 2018.
 
 * Site: http://professor.ufabc.edu.br/~denis.fantinato/teaching/IA
 

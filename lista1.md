@@ -132,7 +132,7 @@ Toma suas decisões visando alcançar um objetivo final.
 
 Toma suas decisões visando alcançar um objetivo final, levando em conta a probabilidade de sucesso.
 
-### Implemente um agente reativo (reflexivo) simples para o problema do aspirador de pó automático, considerando o mundo de dois quadriculados (Figura 2.2 do livro) e as especificações da página 38. Simule o ambiente com este agente para todas as possíveis configurações iniciais sujo/limpo e posição do agente. Grave a medida de desempenho para cada configuração e o desempenho médio geral
+### **3.** Implemente um agente reativo (reflexivo) simples para o problema do aspirador de pó automático, considerando o mundo de dois quadriculados (Figura 2.2 do livro) e as especificações da página 38. Simule o ambiente com este agente para todas as possíveis configurações iniciais sujo/limpo e posição do agente. Grave a medida de desempenho para cada configuração e o desempenho médio geral
 
 ```python
 def reflex(perception)
@@ -146,11 +146,9 @@ def reflex(perception)
 
 Desempenho: nº de ações limpar() executadas, nº de vezes que A e B estão limpos.
 
-### **4.** Considere uma versão modificada do problema do aspirador de pó automático, no qual a geografia do ambiente – extensão, limites e obstáculos – e as condições iniciais (quadriculados limpos/sujos) são desconhecidos. (Assuma que o agente pode se movimentar para cima, baixo, direita e esquerda.)
+### **4.** Considere uma versão modificada do problema do aspirador de pó automático, no qual a geografia do ambiente – extensão, limites e obstáculos – e as condições iniciais (quadriculados limpos/sujos) são desconhecidos. (Assuma que o agente pode se movimentar para cima, baixo, direita e esquerda)
 
 --Todo--
-
-### Considere uma versão modificada do problema do aspirador de pó automático, no qual a geografia do ambiente – extensão, limites e obstáculos – e as condições iniciais (quadriculados limpos/sujos) são desconhecidos. (Assuma que o agente pode se movimentar para cima, baixo, direita e esquerda)
 
 #### Poderia um agente reativo (reflexivo) simples atuar de forma perfeitamente racional neste ambiente? Explique
 
