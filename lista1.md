@@ -7,7 +7,7 @@
 * **Inteligência:** habilidade de aprender e aplicar novos conhecimentos e habilidades.
 * **Inteligência artificial:** habilidade de softwares de computador de aprender e aplicar novos conhecimentos e habilidades.
 * **Agente:** aquele que age e reage de acordo com o ambiente.
-* **Racionalidade:** decisões tomadas.
+* **Racionalidade:** tendência para entender (compreender) os fatos e/ou ideias em conformidade com a lógica. Escolher a melhor ação a ser executada dada uma situação.
 * **Raciocínio lógico:** caminho percorrido para se tomar uma decisão.
 
 ### **2.** Ações reflexas (por exemplo, afastar a mão imediatamente ao tocar um objeto muito quente) são racionais? Elas são inteligentes?
@@ -147,8 +147,6 @@ def reflex(perception)
 Desempenho: nº de ações limpar() executadas, nº de vezes que A e B estão limpos.
 
 ### **4.** Considere uma versão modificada do problema do aspirador de pó automático, no qual a geografia do ambiente – extensão, limites e obstáculos – e as condições iniciais (quadriculados limpos/sujos) são desconhecidos. (Assuma que o agente pode se movimentar para cima, baixo, direita e esquerda)
-
---Todo--
 
 #### Poderia um agente reativo (reflexivo) simples atuar de forma perfeitamente racional neste ambiente? Explique
 
