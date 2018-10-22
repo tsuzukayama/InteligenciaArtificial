@@ -94,19 +94,48 @@ Observável, estocástico, episódico, dinâmico, contínuo.
 
 #### Agente
 
+Um agente é definido pelo ambiente que ele consegue perceber através de seus sensores e as ações que ele pode escolher para atingir um certo objetivo.
+
 #### Função do agente
+
+Entender o ambiente ao seu redor, e executar ações a partir deste entendimento, para chegar a um objetivo final.
 
 #### Programa de agente
 
+Tradução de um agente para linhas de código.
+
 #### Racionalidade
+
+Habilidade de maximizar seu desempenho, em cada tomada de decisão.
 
 #### Autonomia
 
+Habilidade de tomar decisões.
+
 #### Agente reativo
+
+Desenvolve sua inteligência a partir do ambiente, sem modelo estabelecido
 
 #### Agente baseado em modelo
 
+Possui um modelo interno que mapeia o mundo, e pode utilizar estados passados para tomar decisões futuras.
+
 #### Agente baseado em objetivo
+
+Toma suas decisões visando alcançar um objetivo final.
 
 #### Agente baseado em utilidade
 
+Toma suas decisões visando alcançar um objetivo final, levando em conta a probabilidade de sucesso.
+
+### Implemente um agente reativo (reflexivo) simples para o problema do aspirador de pó automático, considerando o mundo de dois quadriculados (Figura 2.2 do livro) e as especificações da página 38. Simule o ambiente com este agente para todas as possíveis configurações iniciais sujo/limpo e posição do agente. Grave a medida de desempenho para cada configuração e o desempenho médio geral
+
+```python
+def reflex(perception)
+  loc, status = perception
+  if status == "sujo":
+    limpa()
+  if loc == "A":
+    direita()
+  else: esquerda()
+```
