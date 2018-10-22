@@ -166,7 +166,22 @@ def reflex_random(perception)
 
 #### Você poderia projetar um ambiente no qual seu agente de função aleatória teria um desempenho ruim? Mostre os resultados
 
+```
+┌───┐   ┌───┐
+│ R │   │ o │
+├───┤   ├───┼───┐
+│ o │   │   │   │
+├───┼───┼───┼───┤
+│   │   │   │   │
+├───┼───┴───┴───┘
+│ o │
+└───┘
+```
+Suponha um ambiente com o formato acima e que o robô só possa se deslocar pelos quadrados. Cada ``o`` é um ponto de sujeira que deve ser limpo e o ``R`` é a posição inicial do robô. Se o deslocamento for randômico, há 25% de chance da direção a ser tomada ser um espaço possível para se deslocar e 75% de chance de permanecer parado. Além disso, no terceiro quadrado de baixo para cima, para ir ao outro quadrante da direita em que há sujeira, é necessário escolher a direção para a direita e continuar indo reto (ainda há chance do robô dar meia volta, permanecendo no lado esquerdo do ambiente).
+
 #### Poderia um agente reativo baseado em modelo superar o desempenho de um agente reativo simples? Projete esse agente e meça o desempenho em vários ambientes
+
+Sim. O agente, dado o histórico de ações tomadas, atualiza o estado atual de acordo com as observações feito de seu histórico, possibilitando uma maximização da função desempenho do algoritmo. Para casos em que o ambiente é sequencial (por exemplo, um jogo de xadrez), o algoritmo conseguirá tomar uma ação muito mais eficiente.
 
 ## Busca
 
