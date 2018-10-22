@@ -191,6 +191,7 @@ Sim. O agente, dado o histórico de ações tomadas, atualiza o estado atual de 
 
 * **Estado Inicial:** mapa sem cores, dividido em n países;
 * **Possíveis ações:** verificar cores dos países adjacentes a um país Y, colorir estado com cor X;
+* **Modelo de transição:** ( TODO )
 * **Função de objetivo:** verificar se todos países estão coloridos sem repetições nos seus adjacentes;
 * **Custo de caminho:** Cada vez que um país é pintado, custa 1. O custo total é a soma destes custos até atingir o objetivo;
 
@@ -198,16 +199,35 @@ Sim. O agente, dado o histórico de ações tomadas, atualiza o estado atual de 
 
 * **Estado Inicial:** caixas em qualquer posição, macaco no chão;
 * **Possíveis ações:** verificar altura da pilha de caixas, empilhar caixa;
+* **Modelo de transição:** ( TODO )
 * **Função de objetivo:** quando a altura das caixas empilhadas somada a altura do macaco forem maior que 2,5m, o objetivo foi atingido;
 * **Custo de caminho:** Cada vez que uma caixa é empilhada o custo é 1, o custo total é a soma de todos os custos;
 
 #### Você tem um programa que exibe a mensagem “entrada ilegal” quando este recebe como entrada certo arquivo. Você sabe que o processamento de cada arquivo é independente um do outro. Você quer descobrir qual arquivos são ilegais.
 
---Todo--
+* **Estado Inicial:** [ file1, file2, file3, ..., file *n*].  
+Programa esperando os arquivos a serem enviados e **n** arquivos a serem enviados.
+* **Possíveis ações:** enviar arquivo, analisar arquivo e exibir mensagem de erro.
+* **Modelo de transição:**  
+(i) enviar um dos *n* arquivos  
+(ii) analisar arquivo enviado  
+(iii) exibir mensagem de erro caso arquivo seja ilegal
+* **Função de objetivo:** *n* arquivos processados, *m* mensagens de erros apontando quais arquivos são ilegais.
+* **Custo de caminho:** Número de arquivos analisados.
 
 #### Você tem 3 jarros que medem 12 L, 8 L e 3 L, e uma torneira. Você pode: (i) completar os jarros com água até a boca, (ii) transferir o conteúdo de um jarro para outro ou (iii) esvaziá-los descartando seu conteúdo. Deseja-se obter uma quantidade de água de exatamente 1 L.
 
---Todo--
+* **Estado Inicial:** [ x, y, z ] = [ 0, 0, 0 ]  
+Jarros de 12L, 8L e 3L com 0L cada um.
+* **Possíveis ações:** Completar jarro, transferir água, esvaziar jarro.
+* **Modelo de transição:**  
+(i) completar *x*, *y* ou *z*  
+(ii) gerar [ 12, y, z ], [ x, 8, z ] ou [ x, y, 3 ].  
+(iii) transferir de um jarro **a** para um jarro **b**  
+jarro b = min(a + b, b)  
+jarro a = max(0, (a + b) - max(b))
+* **Função de objetivo:** x, y ou z = 1
+* **Custo de caminho:** Número de ações
 
 ### **2.** O problema dos missionários e canibais é usualmente descrito como a seguir. Três missionários e três canibais encontram-se em um mesma margem de um rio, e possuem ao alcance um barco a remo que pode carregar uma ou duas pessoas. Encontre uma maneira de levar todos para a outra margem do rio sem nunca deixar um grupo de missionários com número de pessoas menor que aquele dos canibais.
 
