@@ -201,4 +201,26 @@ Sim. O agente, dado o histórico de ações tomadas, atualiza o estado atual de 
 * **Função de objetivo:** quando a altura das caixas empilhadas somada a altura do macaco forem maior que 2,5m, o objetivo foi atingido;
 * **Custo de caminho:** Cada vez que uma caixa é empilhada o custo é 1, o custo total é a soma de todos os custos;
 
-### Defina com suas próprias palavras: estado, espaço de estados, árvore de busca, nó, objetivo, ação, modelo de transição e fator de ramificação.
+#### Você tem um programa que exibe a mensagem “entrada ilegal” quando este recebe como entrada certo arquivo. Você sabe que o processamento de cada arquivo é independente um do outro. Você quer descobrir qual arquivos são ilegais.
+
+--Todo--
+
+#### Você tem 3 jarros que medem 12 L, 8 L e 3 L, e uma torneira. Você pode: (i) completar os jarros com água até a boca, (ii) transferir o conteúdo de um jarro para outro ou (iii) esvaziá-los descartando seu conteúdo. Deseja-se obter uma quantidade de água de exatamente 1 L.
+
+--Todo--
+
+### **2.** O problema dos missionários e canibais é usualmente descrito como a seguir. Três missionários e três canibais encontram-se em um mesma margem de um rio, e possuem ao alcance um barco a remo que pode carregar uma ou duas pessoas. Encontre uma maneira de levar todos para a outra margem do rio sem nunca deixar um grupo de missionários com número de pessoas menor que aquele dos canibais.
+
+#### Formule o problema de forma precisa, fazendo somente as distinções necessárias para garantir uma solução válida.  Desenhe o diagrama completo do espaço de estados.
+
+--Todo--
+
+#### Usando um algoritmo de busca apropriado, implemente e resolva o problema de forma ótima. É uma boa ideia checar estados que se repetem?
+
+--Todo--
+
+#### Por que você acha que pessoas teriam dificuldades em resolver esse problema, dado que o espaço de estados é tão simples?
+
+--Todo--
+
+### **3.** Defina com suas próprias palavras: estado, espaço de estados, árvore de busca, nó, objetivo, ação, modelo de transição e fator de ramificação.
