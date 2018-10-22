@@ -7,7 +7,7 @@
 * **Inteligência:** habilidade de aprender e aplicar novos conhecimentos e habilidades.
 * **Inteligência artificial:** habilidade de softwares de computador de aprender e aplicar novos conhecimentos e habilidades.
 * **Agente:** aquele que age e reage de acordo com o ambiente.
-* **Racionalidade:** decisões tomadas.
+* **Racionalidade:** tendência para entender (compreender) os fatos e/ou ideias em conformidade com a lógica. Escolher a melhor ação a ser executada dada uma situação.
 * **Raciocínio lógico:** caminho percorrido para se tomar uma decisão.
 
 ### **2.** Ações reflexas (por exemplo, afastar a mão imediatamente ao tocar um objeto muito quente) são racionais? Elas são inteligentes?
@@ -148,8 +148,6 @@ Desempenho: nº de ações limpar() executadas, nº de vezes que A e B estão li
 
 ### **4.** Considere uma versão modificada do problema do aspirador de pó automático, no qual a geografia do ambiente – extensão, limites e obstáculos – e as condições iniciais (quadriculados limpos/sujos) são desconhecidos. (Assuma que o agente pode se movimentar para cima, baixo, direita e esquerda)
 
---Todo--
-
 #### Poderia um agente reativo (reflexivo) simples atuar de forma perfeitamente racional neste ambiente? Explique
 
 Não, pois o ambiente pode possuir deformidades na sua geografia, obstáculos, que simples ações direcionais sem levar em conta estados anteriores não poderia prever. Você também não conhece a extensão total do ambiente.
@@ -168,11 +166,26 @@ def reflex_random(perception)
 
 #### Você poderia projetar um ambiente no qual seu agente de função aleatória teria um desempenho ruim? Mostre os resultados
 
+```
+┌───┐   ┌───┐
+│ R │   │ o │
+├───┤   ├───┼───┐
+│ o │   │   │   │
+├───┼───┼───┼───┤
+│   │   │   │   │
+├───┼───┴───┴───┘
+│ o │
+└───┘
+```
+Suponha um ambiente com o formato acima e que o robô só possa se deslocar pelos quadrados. Cada ``o`` é um ponto de sujeira que deve ser limpo e o ``R`` é a posição inicial do robô. Se o deslocamento for randômico, há 25% de chance da direção a ser tomada ser um espaço possível para se deslocar e 75% de chance de permanecer parado. Além disso, no terceiro quadrado de baixo para cima, para ir ao outro quadrante da direita em que há sujeira, é necessário escolher a direção para a direita e continuar indo reto (ainda há chance do robô dar meia volta, permanecendo no lado esquerdo do ambiente).
+
 #### Poderia um agente reativo baseado em modelo superar o desempenho de um agente reativo simples? Projete esse agente e meça o desempenho em vários ambientes
+
+Sim. O agente, dado o histórico de ações tomadas, atualiza o estado atual de acordo com as observações feito de seu histórico, possibilitando uma maximização da função desempenho do algoritmo. Para casos em que o ambiente é sequencial (por exemplo, um jogo de xadrez), o algoritmo conseguirá tomar uma ação muito mais eficiente.
 
 ## Busca
 
-### Formule o problema (estado inicial, possíveis ações, modelo de transição, função de objetivo, custo de caminho) para os casos a seguir. Escolha o nível de abstração adequado para a implementação
+### **1.** Formule o problema (estado inicial, possíveis ações, modelo de transição, função de objetivo, custo de caminho) para os casos a seguir. Escolha o nível de abstração adequado para a implementação
 
 #### Usando somente 4 cores, você deve colorir um mapa de forma que duas regiões (ou países) adjacentes não tenham a mesma cor
 
@@ -188,4 +201,26 @@ def reflex_random(perception)
 * **Função de objetivo:** quando a altura das caixas empilhadas somada a altura do macaco forem maior que 2,5m, o objetivo foi atingido;
 * **Custo de caminho:** Cada vez que uma caixa é empilhada o custo é 1, o custo total é a soma de todos os custos;
 
-### Defina com suas próprias palavras: estado, espaço de estados, árvore de busca, nó, objetivo, ação, modelo de transição e fator de ramificação.
+#### Você tem um programa que exibe a mensagem “entrada ilegal” quando este recebe como entrada certo arquivo. Você sabe que o processamento de cada arquivo é independente um do outro. Você quer descobrir qual arquivos são ilegais.
+
+--Todo--
+
+#### Você tem 3 jarros que medem 12 L, 8 L e 3 L, e uma torneira. Você pode: (i) completar os jarros com água até a boca, (ii) transferir o conteúdo de um jarro para outro ou (iii) esvaziá-los descartando seu conteúdo. Deseja-se obter uma quantidade de água de exatamente 1 L.
+
+--Todo--
+
+### **2.** O problema dos missionários e canibais é usualmente descrito como a seguir. Três missionários e três canibais encontram-se em um mesma margem de um rio, e possuem ao alcance um barco a remo que pode carregar uma ou duas pessoas. Encontre uma maneira de levar todos para a outra margem do rio sem nunca deixar um grupo de missionários com número de pessoas menor que aquele dos canibais.
+
+#### Formule o problema de forma precisa, fazendo somente as distinções necessárias para garantir uma solução válida.  Desenhe o diagrama completo do espaço de estados.
+
+--Todo--
+
+#### Usando um algoritmo de busca apropriado, implemente e resolva o problema de forma ótima. É uma boa ideia checar estados que se repetem?
+
+--Todo--
+
+#### Por que você acha que pessoas teriam dificuldades em resolver esse problema, dado que o espaço de estados é tão simples?
+
+--Todo--
+
+### **3.** Defina com suas próprias palavras: estado, espaço de estados, árvore de busca, nó, objetivo, ação, modelo de transição e fator de ramificação.
