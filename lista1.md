@@ -178,16 +178,16 @@ def reflex_random(perception)
 
 #### Usando somente 4 cores, você deve colorir um mapa de forma que duas regiões (ou países) adjacentes não tenham a mesma cor
 
-* Estado Inicial: mapa sem cores, dividido em n países;
-* Possíveis ações: verificar cores dos países adjacentes a um país Y, colorir estado com cor X;
-* Função de objetivo: verificar se todos países estão coloridos sem repetições nos seus adjacentes;
-* Custo de caminho: Cada vez que um país é pintado, custa 1. O custo total é a soma destes custos até atingir o objetivo;
+* **Estado Inicial:** mapa sem cores, dividido em n países;
+* **Possíveis ações:** verificar cores dos países adjacentes a um país Y, colorir estado com cor X;
+* **Função de objetivo:** verificar se todos países estão coloridos sem repetições nos seus adjacentes;
+* **Custo de caminho:** Cada vez que um país é pintado, custa 1. O custo total é a soma destes custos até atingir o objetivo;
 
 #### Um macaco de 1 m de altura está em uma sala onde há algumas bananas suspensas a 2,5 m de altura. Ele gostaria de pegar as bananas. A sala contém duas caixas móveis de 1 m de altura, passíveis de serem empilhadas e escaladas
 
-* Estado Inicial: caixas em qualquer posição, macaco no chão;
-* Possíveis ações: verificar altura da pilha de caixas, empilhar caixa;
-* Função de objetivo: quando a altura das caixas empilhadas somada a altura do macaco forem maior que 2,5m, o objetivo foi atingido;
-* Custo de caminho: Cada vez que uma caixa é empilhada o custo é 1, o custo total é a soma de todos os custos;
+* **Estado Inicial:** caixas em qualquer posição, macaco no chão;
+* **Possíveis ações:** verificar altura da pilha de caixas, empilhar caixa;
+* **Função de objetivo:** quando a altura das caixas empilhadas somada a altura do macaco forem maior que 2,5m, o objetivo foi atingido;
+* **Custo de caminho:** Cada vez que uma caixa é empilhada o custo é 1, o custo total é a soma de todos os custos;
 
 ### Defina com suas próprias palavras: estado, espaço de estados, árvore de busca, nó, objetivo, ação, modelo de transição e fator de ramificação.
