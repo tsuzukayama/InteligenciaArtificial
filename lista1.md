@@ -139,3 +139,5 @@ def reflex(perception)
     direita()
   else: esquerda()
 ```
+
+Desempenho: nº de ações limpar() executadas, nº de vezes que A e B estão limpos.
