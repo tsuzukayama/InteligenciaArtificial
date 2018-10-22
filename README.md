@@ -12,4 +12,8 @@ Repositório com o conteúdo da disciplina de Inteligência Artificial, da UFABC
         * Busca informada
         * Retro Learning
         * Implementação BFS/DFS/A*
-    2. [Lista 2](lista2.md)
+    2. [Lista 2](lista2.md) (CSP, Competição)
+        * Constraint Satisfaction Problems (CSP)
+        * Busca Competitiva
+        * Busca Expectimax e Utilidades
+        * Monte Carlo Tree Search
