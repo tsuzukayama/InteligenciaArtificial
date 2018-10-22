@@ -2,29 +2,33 @@
 
 ## Inteligência Artificial
 
-### Defina com suas próprias palavras: (a) inteligência, (b) inteligência artificial, (c) agente, (d) racionalidade, (e) raciocínio lógico
+### **1.** Defina com suas próprias palavras: (a) inteligência, (b) inteligência artificial, (c) agente, (d) racionalidade, (e) raciocínio lógico
 
-* Inteligência: habilidade de aprender e aplicar novos conhecimentos e habilidades.
-* Inteligência artificial: habilidade de softwares de computador de aprender e aplicar novos conhecimentos e habilidades.
-* Agente: aquele que age e reage de acordo com o ambiente.
-* Racionalidade: decisões tomadas.
-* Raciocínio lógico: caminho percorrido para se tomar uma decisão.
+* **Inteligência:** habilidade de aprender e aplicar novos conhecimentos e habilidades.
+* **Inteligência artificial:** habilidade de softwares de computador de aprender e aplicar novos conhecimentos e habilidades.
+* **Agente:** aquele que age e reage de acordo com o ambiente.
+* **Racionalidade:** decisões tomadas.
+* **Raciocínio lógico:** caminho percorrido para se tomar uma decisão.
 
-### Ações reflexas (por exemplo, afastar a mão imediatamente ao tocar um objeto muito quente) são racionais? Elas são inteligentes?
+### **2.** Ações reflexas (por exemplo, afastar a mão imediatamente ao tocar um objeto muito quente) são racionais? Elas são inteligentes?
 
 Sim, pois não tomar a ação resulta em prejuízos (queimadura). Mas não são inteligentes, pois não é baseada em aplicar conhecimento adquirido.
 
-### “Computadores não podem ser inteligentes – eles podem fazer apenas o que seus programadores dizem a eles”. Esta última afirmação é verdadeira? A última afirmação implica na primeira?
+### **3.** “Computadores não podem ser inteligentes – eles podem fazer apenas o que seus programadores dizem a eles”. Esta última afirmação é verdadeira? A última afirmação implica na primeira?
 
 É verdadeira, computadores só fazem aquilo que são programados para fazer. Não, pois o programador pode ensinar habilidades para tomar decisões e aprender com elas.
 
-### “Certamente animais não podem ser inteligentes – eles podem fazer apenas o que seus genes dizem a eles”. Esta última afirmação é verdadeira? A última afirmação implica na primeira?
+### **4.** “Certamente animais não podem ser inteligentes – eles podem fazer apenas o que seus genes dizem a eles”. Esta última afirmação é verdadeira? A última afirmação implica na primeira?
+
+--Todo--
+
+### **5.** Certamente animais, computadores e humanos não podem ser inteligentes – eles podem fazer apenas o que os átomos que os constituem são obrigados a fazer pelas leis da física”. Esta última afirmação é verdadeira? A última afirmação implica na primeira?
 
 --Todo--
 
 ## Agentes
 
-### Para cada uma das seguintes atividades, forneça a descrição PEAS da tarefa a caracterize-a de acordo com as propriedades [Observável/Não observável; Determinístico/Estocástico; Episódico/Sequencial; Estático/Dinâmico; Discreto/Contínuo; Conhecido/Desconhecido]
+### **1.** Para cada uma das seguintes atividades, forneça a descrição PEAS da tarefa a caracterize-a de acordo com as propriedades [Observável/Não observável; Determinístico/Estocástico; Episódico/Sequencial; Estático/Dinâmico; Discreto/Contínuo; Conhecido/Desconhecido]
 
 #### Jogando futebol
 
@@ -90,7 +94,7 @@ Observável, determinístico, sequencial, estático, discreto.
 
 Observável, estocástico, episódico, dinâmico, contínuo.
 
-### Defina os seguintes termos com suas próprias palavras: agente, função de agente, programa de agente, racionalidade, autonomia, agente reativo (reflexivo), agente baseado em modelo, agente baseado em objetivo, agente baseado em utilidade
+### **2.** Defina os seguintes termos com suas próprias palavras: agente, função de agente, programa de agente, racionalidade, autonomia, agente reativo (reflexivo), agente baseado em modelo, agente baseado em objetivo, agente baseado em utilidade
 
 #### Agente
 
@@ -141,3 +145,7 @@ def reflex(perception)
 ```
 
 Desempenho: nº de ações limpar() executadas, nº de vezes que A e B estão limpos.
+
+### **4.** Considere uma versão modificada do problema do aspirador de pó automático, no qual a geografia do ambiente – extensão, limites e obstáculos – e as condições iniciais (quadriculados limpos/sujos) são desconhecidos. (Assuma que o agente pode se movimentar para cima, baixo, direita e esquerda.)
+
+--Todo--
