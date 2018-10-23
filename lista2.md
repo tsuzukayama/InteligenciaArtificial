@@ -2,13 +2,13 @@
 
 ## CSP
 
-### **1.** Considere o problema de alocação de 𝑘 cavalos em um tabuleiro de xadrez 𝑛 × 𝑛 tal que nenhum cavalo é atacado. Assume-se que 𝑘 é dado e que 𝑘 ≤ 𝑛 × 2
+### **1.** Considere o problema de alocação de 𝑘 cavalos em um tabuleiro de xadrez 𝑛 × 𝑛 tal que nenhum cavalo é atacado. Assume-se que 𝑘 é dado e que 𝑘 ≤ 𝑛^2
 
 #### a. Formule o problema CSP
 
-X = {k | k ≤ n × 2}
+D = {k | 1 ≤ k ≤ n^2}
 
-D = {x, y | 0 ≤ x n, 0 ≤ y ≤ n}
+X = {x, y | 0 ≤ x n, 0 ≤ y ≤ n}
 
 C = {{x + 1, y + 2} = vazio, {x - 1, y + 2} = vazio}, {x + 1, y - 2} = vazio, {x - 1, y - 2} = vazio}
 
