@@ -205,35 +205,52 @@ Sim. O agente, dado o histórico de ações tomadas, atualiza o estado atual de 
 
 #### Você tem um programa que exibe a mensagem “entrada ilegal” quando este recebe como entrada certo arquivo. Você sabe que o processamento de cada arquivo é independente um do outro. Você quer descobrir qual arquivos são ilegais.
 
-* **Estado Inicial:** [ file1, file2, file3, ..., file *n*].  
-Programa esperando os arquivos a serem enviados e **n** arquivos a serem enviados.
+* **Estado Inicial:**
+
+  [ file1, file2, file3, ..., file *n*].  
+  Programa esperando os arquivos a serem enviados e **n** arquivos a serem enviados.
+
 * **Possíveis ações:** enviar arquivo, analisar arquivo e exibir mensagem de erro.
+
 * **Modelo de transição:**  
-(i) enviar um dos *n* arquivos  
-(ii) analisar arquivo enviado  
-(iii) exibir mensagem de erro caso arquivo seja ilegal
+  (i) enviar um dos *n* arquivos  
+  (ii) analisar arquivo enviado  
+  (iii) exibir mensagem de erro caso arquivo seja ilegal
+
 * **Função de objetivo:** *n* arquivos processados, *m* mensagens de erros apontando quais arquivos são ilegais.
+
 * **Custo de caminho:** Número de arquivos analisados.
 
-#### Você tem 3 jarros que medem 12 L, 8 L e 3 L, e uma torneira. Você pode: (i) completar os jarros com água até a boca, (ii) transferir o conteúdo de um jarro para outro ou (iii) esvaziá-los descartando seu conteúdo. Deseja-se obter uma quantidade de água de exatamente 1 L.
+#### Você tem 3 jarros que medem 12 L, 8 L e 3 L, e uma torneira. Você pode: (i) completar os jarros com água até a boca, (ii) transferir o conteúdo de um jarro para outro ou (iii) esvaziá-los descartando seu conteúdo. Deseja-se obter uma quantidade de água de exatamente 1 L
 
-* **Estado Inicial:** [ x, y, z ] = [ 0, 0, 0 ]  
-Jarros de 12L, 8L e 3L com 0L cada um.
+* **Estado Inicial:**
+
+  [ x, y, z ] = [ 0, 0, 0 ]  
+  Jarros de 12L, 8L e 3L com 0L cada um.
+
 * **Possíveis ações:** Completar jarro, transferir água, esvaziar jarro.
+
 * **Modelo de transição:**  
-(i) completar *x*, *y* ou *z*  
-(ii) gerar [ 12, y, z ], [ x, 8, z ] ou [ x, y, 3 ].  
-(iii) transferir de um jarro **a** para um jarro **b**  
-jarro b = min(a + b, b)  
-jarro a = max(0, (a + b) - max(b))
+
+  (i) completar *x*, *y* ou *z*  
+  (ii) gerar [ 12, y, z ], [ x, 8, z ] ou [ x, y, 3 ].  
+  (iii) transferir de um jarro **a** para um jarro **b**  
+  jarro b = min(a + b, b)  
+  jarro a = max(0, (a + b) - max(b))
+
 * **Função de objetivo:** x, y ou z = 1
+
 * **Custo de caminho:** Número de ações
 
-### **2.** O problema dos missionários e canibais é usualmente descrito como a seguir. Três missionários e três canibais encontram-se em um mesma margem de um rio, e possuem ao alcance um barco a remo que pode carregar uma ou duas pessoas. Encontre uma maneira de levar todos para a outra margem do rio sem nunca deixar um grupo de missionários com número de pessoas menor que aquele dos canibais.
+### **2.** O problema dos missionários e canibais é usualmente descrito como a seguir. Três missionários e três canibais encontram-se em um mesma margem de um rio, e possuem ao alcance um barco a remo que pode carregar uma ou duas pessoas. Encontre uma maneira de levar todos para a outra margem do rio sem nunca deixar um grupo de missionários com número de pessoas menor que aquele dos canibais
 
 #### Formule o problema de forma precisa, fazendo somente as distinções necessárias para garantir uma solução válida.  Desenhe o diagrama completo do espaço de estados.
 
---Todo--
+O estado inicial é de todos os missionários e canibais de um lado do rio.
+
+As ações devem ser de levar duas pessoas por viagem para cada lado do rio.
+
+Antes de cada viagem, deve-se analisar se o número de missionários que ficará é maior ou igual o número de canibais.
 
 #### Usando um algoritmo de busca apropriado, implemente e resolva o problema de forma ótima. É uma boa ideia checar estados que se repetem?
 
@@ -243,4 +260,20 @@ jarro a = max(0, (a + b) - max(b))
 
 --Todo--
 
-### **3.** Defina com suas próprias palavras: estado, espaço de estados, árvore de busca, nó, objetivo, ação, modelo de transição e fator de ramificação.
+### **3.** Defina com suas próprias palavras: estado, espaço de estados, árvore de busca, nó, objetivo, ação, modelo de transição e fator de ramificação
+
+**estado:** situação em que se encontra o agente.
+
+**espaço de estados:** grafo onde os nós são estados e as conexões as ações que transformam um estado.
+
+**árvore de busca:** árvore onde a raíz é o estado inicial e os filhos são estados alcançáveis a partir de uma ação.
+
+**nó:** nó de uma árvore
+
+**objetivo:** estado que o agente quer alcançar.
+
+**ação:** algo que o agente escolhe fazer.
+
+**modelo de transição:** dado um estado, retorna uma ação e um estado alcançável.
+
+**fator de ramificação:** número de ações disponíveis para um agente.

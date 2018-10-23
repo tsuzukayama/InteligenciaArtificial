@@ -95,9 +95,31 @@ C = [
 
 #### Jogo imobiliário
 
-* **S0:** 
-* **Jogador(s):** 
-* **Acoes(s):** 
-* **Result(s, a):** 
-* **Terminal(s):** 
-* **Utilidade:** 
+* **Estado incial:** no início do jogo, todos jogadores possúem a mesma quantidade de dinheiro e estão na mesma casa do tabuleiro.
+* **Estado de jogada:** um jogador pode rodar o dado duas vezes, ou comprar casas se tiverem propriedades.
+* **Estado de dados:** o jogador se move de acordo com o que sai nos dados. Dependendo de onde parar, deve para aluguel a um outro jogador, pode comprar a propriedade, pode coletar dinheiro, ou ir para cadeia.
+* **Estado de objetivo:** um  jogador leva os outros a falência, ou se o tempo acabou e leva quem tiver mais dinheiro.
+* **Resultado de transição de estado:** transições acontecem ao rolar os dados, com valores de 1 a 12. Se os valores dos dados são iguais, pode-se jogá-los denovo. Isso só pode ocorrer duas vezes seguidas, senão o jogador vai para a cadeia.
+* **Estado terminal:** existem pelos menos dois jogadores? então continua o jogo. Senão, o último jogador vence.
+* **Função utilidade:** Comprar propriedades que garantem maiores lucros de aluguel.
+
+### **2.** Prove o seguinte: Para toda árvore de jogo, a utilidade obtida pelo jogador MAX usando decisões minimax contra um jogador MIN subótimo nunca será menor que aquela obtida contra um jogador MIN ótimo. Você conseguiria pensar em uma árvore de jogo no qual MAX pode se dar melhor usando uma estratégia subótima contra um jogador MIN subótimo?
+
+### **3.** No jogo da velha, seja 𝑋𝑛 o número de linhas, colunas ou diagonais com exatamente 𝑛 𝑋′𝑠 e nenhum 𝑂. Similarmente, assuma que 𝑂𝑛 é o número de linhas, colunas ou diagonais com apenas 𝑛 𝑂′𝑠. A função utilidade atribui +1 para qualquer posição com 𝑋3 = 1 e −1 para qualquer posição com 𝑂3 = 1. Todas as outras posições terminais tem utilidade 0. Para posições não terminais, usaremos a função de avaliação: **𝐸𝑣𝑎𝑙(𝑠) = 3𝑋2(𝑠) + 𝑋1(𝑠) − (3𝑂2(𝑠) + 𝑂1(𝑠))**
+
+a. Aproximadamente quantos jogos diferentes existem?
+
+max = 9!
+min = 9 \* 8 \* 7 \* 6 \* 5
+
+b. Mostre uma árvore de jogo completa começando de um jogo vazio indo até a profundidade 2 (isto é, com um 𝑋 e um 𝑂), levando em consideração a simetria.
+
+c. Marque em sua árvore as avaliações para todas as posições na profundidade 2.
+
+d. Usando o algoritmo minimax, marque em sua árvore os valores para as posições nas profundidades 1 e 0, e use estes valores para escolher a melhor jogada inicial.
+
+e. Circule os nós na profundidade 2 que não seriam avaliadas se o algoritmo alfa-beta fosse utilizado, assumindo que os nós são gerados na ordem ótima para a poda alfa-beta.
+
+### **4.** Descreva como os algoritmos minimax e alfa-beta mudariam para jogos de soma NÃO-zero (com dois jogadores) na qual cada jogador tem uma função utilidade distinta e ambas são conhecidas pelos jogadores. Se não existem restrições nas duas utilidades terminais, é possível que os nós sejam podados pelo alfa-beta? E se as funções de utilidade dos jogadores diferirem por, no máximo, uma constante 𝑘, tornando o jogo praticamente cooperativo?
+
+a
