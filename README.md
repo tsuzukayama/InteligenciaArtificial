@@ -17,4 +17,5 @@ Repositório com o conteúdo da disciplina de Inteligência Artificial, da UFABC
         * Busca Competitiva
         * Busca Expectimax e Utilidades
         * Monte Carlo Tree Search
-2. [Resolução das listas](http://www.learngroup.org/uploads/2015-04-01/Solution_Manual_Artificial_Intelligence_A_Modern_Approach.pdf)
+2. [Solucionário oficial](http://www.learngroup.org/uploads/2015-04-01/Solution_Manual_Artificial_Intelligence_A_Modern_Approach.pdf)
+3. [Blog com soluções](https://wiresharklabs.wordpress.com/2013/11/24/chapter-5/)

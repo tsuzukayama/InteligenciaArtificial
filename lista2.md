@@ -24,7 +24,11 @@ C = {para cada lista disciplina de um professor, não pode haver disciplinas no 
 
 ### **3.** Mostre como uma única restrição ternária do tipo 𝐴 + 𝐵 = 𝐶 pode se tornar três restrições binárias através do uso de uma variável auxiliar. Você pode assumir domínios finitos (Dica: Considere uma nova variável que recebe valores que são pares de outros valores, e considere restrições do tipo “X é o primeiro elemento do par Y”). Em seguida, mostre como restrições com mais do que três variáveis podem ser tratadas de forma similar. Finalmente, mostre como restrições unárias podem ser eliminadas pela alteração do domínio das variáveis. Isto completa a demonstração de que qualquer CSP pode ser transformado em um CSP com apenas restrições binárias
 
-A + B = C
+Introduzimos uma nova variável AB. Se o domínio de A e B é o conjunto de números N, então o domínio de AB é o conjunto de pares de número de N, N x N.
+
+Então, dizemos que existem três restrições binárias: o valor de A deve ser igual ao primeiro elemento do par AB, o valor de B deve ser igual ao segundo elemento do par AB, e a soma de pares AB deve ser igual a C.
+
+Para restrições com mais de três variáveis, por exemplos A, B, C e D, podemos reduzir primeiro A, B e C exatamente como demonstrado, e depois adicionar D numa restrição ternaria com AB e C, e depois reduzir esta restrição ternaria numa restrição binaria introduzindo a variável CD.
 
 ### **4.** Considere o seguinte quebra-cabeça: Em uma mesma rua, há cinco casas de diferentes cores. Em cada uma delas, vive uma pessoa de uma nacionalidade diferente. Cada uma dessas pessoas gosta de uma bebida diferente e de uma marca de doces diferente da dos demais. Além disso, cada uma possui uma espécie diferente de animal de estimação. As perguntas são: Onde a zebra mora e em qual casa se bebe água?
 
@@ -74,7 +78,26 @@ C = [
 
   },
   {
-    
+
   },
 ]
 ```
+
+### **9.** Defina com suas próprias palavras os termos: restrição, busca backtracking e consistência de arco
+
+* **Restrição:** condição que não pode acontecer para a sua solução ser válida. Por exemplo, se a restrição é que A <> 2 em um conjunto X, A nunca pode ser 2.
+* **Busca backtracking:** tipo de busca em profundidade, que salva o valor de cada nó em apenas uma variável, não atribui valores conflitantes com restrições e para de expandir um nó ao atingir uma solução infactível.
+* **Consistência de arco:** para um arco entre A e B, ele é dito consistente caso para todo valor no domínio de A, existe um valor consistente em B, ou seja, que não infrinja nenhuma restrição.
+
+## Competição
+
+### **1.** Formalize e implemente um jogo (descrições de estado, ações, resultado de transição de estado, estado terminal e função utilidade) para um ou mais dos seguintes jogos estocásticos: jogo imobiliário (ou monopoly), scrabble, Texas hold’em poker
+
+#### Jogo imobiliário
+
+* **S0:** 
+* **Jogador(s):** 
+* **Acoes(s):** 
+* **Result(s, a):** 
+* **Terminal(s):** 
+* **Utilidade:** 
