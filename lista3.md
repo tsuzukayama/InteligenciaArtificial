@@ -4,23 +4,61 @@
 
 ### Capítulo 16
 
-#### **2.** Chris avalia 4 carros usados antes de comprar aquele que tem a maior utilidade esperada. Pat avalia 10 carros e também deseja comprar o de maior utilidade esperada. Considerando condições de análise iguais para Chris e Pat, quem tem mais chances de comprar o melhor carro? Quem tem mais chances de se arrepender da qualidadedo carro? Você conseguiria quantificar essas chances em termos do desvio padrão da qualidade esperada?
+#### **2.** Chris avalia 4 carros usados antes de comprar aquele que tem a maior utilidade esperada. Pat avalia 10 carros e também deseja comprar o de maior utilidade esperada. Considerando condições de análise iguais para Chris e Pat, quem tem mais chances de comprar o melhor carro? Quem tem mais chances de se arrepender da qualidade do carro? Você conseguiria quantificar essas chances em termos do desvio padrão da qualidade esperada?
+
+Suponha que cada um tenha uma probabilidade p de pegar um carro com maior utilidade. Chris possui 4 * p e Pat 10 * p. Pat possui mais informações sobre sua escolha, loga tem mais chance de pegar o carro com maior utilidade.
 
 #### **3.** Em 1713, Nicolas Bernoulli formulou um puzzle, agora conhecido como "o paradoxo de São Petersburgo", que funciona da seguinte maneira.  Você tem a oportunidade de jogar um jogo no qual uma moeda justa é lançada repetidamente até que o resultado seja "cara". A primeira vez que aparecer "cara" no n-ésimo lançamento, você ganha 2^n reais
 
 ##### a) Mostre que o valor monetário esperado desse jogo é infinito
+```
+EMV(L) = somatória de n até infinito, da probabilidade de cara aparecer na jogada n vezes a utilidade esperada.
+
+EMV(L) = SOMA(1 até infinito, 2^-n * 2^n)
+EMV(L) = SOMA(1 até infinito, 1)
+EMV(L) = infinito
+```
 
 ##### b) Quanto você pagaria para jogar esse jogo?
+```
+n = 1, U = 2, P = 0.5
+n = 2, U = 4, P = 0.25
+n = 3, U = 8, P = 0.125
+```
+
+Em torno de 4 reais, pois para ganhar mais que isso, a probabilidade já é muito baixa.
 
 ##### c) Daniel Bernoulli, primo de Nicolas, resolveu o aparente paradoxo em 1738 sugerindo que a utilidade monetária fosse medida usando uma escala logarítmica (ou seja, *U(S<sub>n</sub>) = a * log2 n + b*, em que *S<sub>n</sub>* é o estado com *R$n*). Qual é a utilidade esperada para o jogo sob essa suposição.
 
+Assumindo o patrimonio inicil de (k - c), onde c é o preço do jogo:
+
+```
+U(L) = somatoria(1 até infinito, 2^-n * a * log2(k - c + 2^n) + b);
+```
+
+Assumindo k - c = 0 para simplificar:
+```
+U(L) =  somatoria(1 até infinito, 2^-n * (a * log2(2^n) + b);
+U(L) =  somatoria(1 até infinito, 2^-n * a * n + b;
+U(L) = 2 * a + b;
+```
+
 ##### a) Qual seria a quantidade máxima que alguém pagaria para jogar o jogo, assumindo que essa pessoa já possui *R$k*?
+
+```
+a * log2c + b = 2 * a + b;
+c = 4;
+```
 
 ### Capítulo 17
 
-#### **1.** Para o mundo 4 × 3mostrado na Figura 17.1, calcule quais quadrados podem ser alcançados a partir de (1, 1),  pela sequência de ações [cima, cima, direita, direita, direita] e com quais probabilidades.
+#### **1.** Para o mundo 4 × 3 mostrado na Figura 17.1, calcule quais quadrados podem ser alcançados a partir de (1, 1),  pela sequência de ações [cima, cima, direita, direita, direita] e com quais probabilidades.
+
+
 
 #### **3.** Suponha que nós definimos a utilidade de uma sequência de estados para ser a máxima recompensa obtida em qualquer estado da sequência. Mostre que esta função utilidade não resulta em preferências estacionárias entre sequências de estado. Seria possível definir uma função utilidade em estados tal que a decisão por máxima utilidade esperada (MEU) resulta no comportamento ótimo do agente?
+
+
 
 #### **5.** Para o ambiente mostrado na Figura 17.1, encontre os valores limites *(threshold)* para *R(s)* tal que a política ótima muda quando o valor limite é cruzado. Você irá precisar calcular a política ótima e seu valor fixo *R(s)*. Dica: Prove que o valor de qualquer política fixa varia linearmente com *R(s)*.
 
