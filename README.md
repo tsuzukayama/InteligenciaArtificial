@@ -20,5 +20,8 @@ Repositório com o conteúdo da disciplina de Inteligência Artificial, da UFABC
     3. [Lista 3](lista3.md) (MDP, Aprendizado por Reforço)
         * Markov Decision Precesses (MDP)
         * Aprendizado por Reforço
-2. [Solucionário oficial](http://www.learngroup.org/uploads/2015-04-01/Solution_Manual_Artificial_Intelligence_A_Modern_Approach.pdf)
-3. [Blog com soluções](https://wiresharklabs.wordpress.com/2013/11/24/chapter-5/)
+2. [Solucionário oficial - 2ª edição](http://www.learngroup.org/uploads/2015-04-01/Solution_Manual_Artificial_Intelligence_A_Modern_Approach.pdf)
+
+3. [Solucionário oficial - 3ª edição](solucionario.pdf)
+
+4. [Blog com soluções](https://wiresharklabs.wordpress.com/2013/11/24/chapter-5/)
