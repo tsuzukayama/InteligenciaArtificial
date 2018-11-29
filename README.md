@@ -22,6 +22,7 @@ Repositório com o conteúdo da disciplina de Inteligência Artificial, da UFABC
         * Aprendizado por Reforço
     3. [Lista 4](lista4.md) (Heurística, meta-heurística)
         * Hill-climbing
+        * Simulated annealing
 2. [Solucionário oficial - 2ª edição](http://www.learngroup.org/uploads/2015-04-01/Solution_Manual_Artificial_Intelligence_A_Modern_Approach.pdf)
 
 3. [Solucionário oficial - 3ª edição](solucionario.pdf)
