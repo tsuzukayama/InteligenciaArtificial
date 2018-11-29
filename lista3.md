@@ -10,7 +10,7 @@ Suponha que cada um tenha uma probabilidade p de pegar um carro com maior utilid
 
 #### **3.** Em 1713, Nicolas Bernoulli formulou um puzzle, agora conhecido como "o paradoxo de São Petersburgo", que funciona da seguinte maneira.  Você tem a oportunidade de jogar um jogo no qual uma moeda justa é lançada repetidamente até que o resultado seja "cara". A primeira vez que aparecer "cara" no n-ésimo lançamento, você ganha 2^n reais
 
-##### a) Mostre que o valor monetário esperado desse jogo é infinito
+#### a) Mostre que o valor monetário esperado desse jogo é infinito
 ```
 EMV(L) = somatória de n até infinito, da probabilidade de cara aparecer na jogada n vezes a utilidade esperada.
 
@@ -19,7 +19,7 @@ EMV(L) = SOMA(1 até infinito, 1)
 EMV(L) = infinito
 ```
 
-##### b) Quanto você pagaria para jogar esse jogo?
+#### b) Quanto você pagaria para jogar esse jogo?
 ```
 n = 1, U = 2, P = 0.5
 n = 2, U = 4, P = 0.25
@@ -28,7 +28,7 @@ n = 3, U = 8, P = 0.125
 
 Em torno de 4 reais, pois para ganhar mais que isso, a probabilidade já é muito baixa.
 
-##### c) Daniel Bernoulli, primo de Nicolas, resolveu o aparente paradoxo em 1738 sugerindo que a utilidade monetária fosse medida usando uma escala logarítmica (ou seja, *U(S<sub>n</sub>) = a * log2 n + b*, em que *S<sub>n</sub>* é o estado com *R$n*). Qual é a utilidade esperada para o jogo sob essa suposição.
+#### c) Daniel Bernoulli, primo de Nicolas, resolveu o aparente paradoxo em 1738 sugerindo que a utilidade monetária fosse medida usando uma escala logarítmica (ou seja, *U(S<sub>n</sub>) = a * log2 n + b*, em que *S<sub>n</sub>* é o estado com *R$n*). Qual é a utilidade esperada para o jogo sob essa suposição.
 
 Assumindo o patrimonio inicil de (k - c), onde c é o preço do jogo:
 
@@ -43,18 +43,45 @@ U(L) =  somatoria(1 até infinito, 2^-n * a * n + b;
 U(L) = 2 * a + b;
 ```
 
-##### a) Qual seria a quantidade máxima que alguém pagaria para jogar o jogo, assumindo que essa pessoa já possui *R$k*?
+#### d) Qual seria a quantidade máxima que alguém pagaria para jogar o jogo, assumindo que essa pessoa já possui *R$k*?
 
 ```
 a * log2c + b = 2 * a + b;
 c = 4;
 ```
 
+### **6.** Prove que as preferências 𝐵 ≻ 𝐴 e 𝐶 ≻ 𝐷 no paradoxo de Allais (página 620) viola o axioma de substituição.
+
+
+
+### **7.** Considere o paradoxo de Allais descrito na página 620: um agente que prefere B em relação a A, e C em relação a D (assumindo o maior valor monetário esperado (EMV)) não está agindo racionalmente, de acordo com a teoria da utilidade. Você acha que isso seria um problema para o agente, um problema para a teoria, ou não há problema algum? Justifique.
+
+
+
+### **8.** Bilhetes para uma loteria custam 𝑅$1. Existem dois possíveis prêmios: 𝑅$10,00 com probabilidade 1/50 e 𝑅$1.000.000,00 com probabilidade 1/2.000.000. Qual é o valor monetário esperado para o bilhete da loteria? Por qual valor (se houver) seria razoável comprar um bilhete? Seja preciso - mostre uma equação envolvendo utilidades. Você pode assumir que seu saldo atual é 𝑅$𝑘 e que 𝑈(𝑆𝑘) = 0. Você também pode assumir que 𝑈(𝑆𝑘+10) = 10 × 𝑈(𝑆𝑘+1), mas você não pode assumir nada sobre 𝑈(𝑆𝑘+1.000.000). Estudos sociológicos mostram que pessoas com renda baixa compram um número de bilhetes de forma não proporcional. Você acha que isto é resultado de uma decisão ruim ou de um uso de uma função utilidade diferente?
+
+```
+p(10) = 1/50;
+p(1.000.000) = 1/2.000.000;
+
+EMV(L) = somatoria(1 até n, probabilidade de n * utilidade esperada);
+EMV(L) = 1/50 * 10 + 1/2.000.000 * 1.000.000 = 0,70;
+```
+
+```
+
+```
+
 ### Capítulo 17
 
 #### **1.** Para o mundo 4 × 3 mostrado na Figura 17.1, calcule quais quadrados podem ser alcançados a partir de (1, 1),  pela sequência de ações [cima, cima, direita, direita, direita] e com quais probabilidades.
 
+Deve-se somar a probabilidade de ir para aquele quadrante a cada passo do tempo. Por exemplo:
 
+* No primeiro passo, existe probabilidade 0,8 de ir para (1,2), 0,1 para ficar em (1,1) e 0,1 de ir para (2,1);
+* Para continuar em (1, 1) existe probabilidade 0,1^2, caso ainda esteja em (1, 1), e probabilidade 0,1^2 caso esteja em (2,1), somando um total de 0,02;
+
+(ver solucionário)
 
 #### **3.** Suponha que nós definimos a utilidade de uma sequência de estados para ser a máxima recompensa obtida em qualquer estado da sequência. Mostre que esta função utilidade não resulta em preferências estacionárias entre sequências de estado. Seria possível definir uma função utilidade em estados tal que a decisão por máxima utilidade esperada (MEU) resulta no comportamento ótimo do agente?
 
