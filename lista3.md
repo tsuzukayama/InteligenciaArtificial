@@ -6,7 +6,16 @@
 
 #### **2.** Chris avalia 4 carros usados antes de comprar aquele que tem a maior utilidade esperada. Pat avalia 10 carros e também deseja comprar o de maior utilidade esperada. Considerando condições de análise iguais para Chris e Pat, quem tem mais chances de comprar o melhor carro? Quem tem mais chances de se arrepender da qualidade do carro? Você conseguiria quantificar essas chances em termos do desvio padrão da qualidade esperada?
 
-Suponha que cada um tenha uma probabilidade p de pegar um carro com maior utilidade. Chris possui 4 * p e Pat 10 * p. Pat possui mais informações sobre sua escolha, loga tem mais chance de pegar o carro com maior utilidade.
+Suponha que existam **n** carros e dois estados diferentes, escolher o melhor carro ou não. A utilidade esperada para escolher o melhor carro dentre **n** carros é
+
+![EU(S_{i}) = \sum_{i}^{n} p \cdot  U(s_{i})](https://latex.codecogs.com/gif.latex?EU(S_{i})&space;=&space;\sum_{i}^{n}&space;p&space;\cdot&space;U(s_{i}))
+
+![EU(S_{i}) = \sum_{i}^{n} p \cdot  1](https://latex.codecogs.com/gif.latex?EU(S_{i})&space;=&space;\sum_{i}^{n}&space;p&space;\cdot&space;1)
+
+![EU(S_{i}) = n \cdot p](https://latex.codecogs.com/gif.latex?EU(S_{i})&space;=&space;n&space;\cdot&space;p)
+
+Chris tem ``U(s) = 4p`` e Pat tem ``U(s) = 10p``.
+
 
 #### **3.** Em 1713, Nicolas Bernoulli formulou um puzzle, agora conhecido como "o paradoxo de São Petersburgo", que funciona da seguinte maneira.  Você tem a oportunidade de jogar um jogo no qual uma moeda justa é lançada repetidamente até que o resultado seja "cara". A primeira vez que aparecer "cara" no n-ésimo lançamento, você ganha 2^n reais
 
